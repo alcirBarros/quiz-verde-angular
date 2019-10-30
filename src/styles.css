@@ -1,1 +1,276 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.container::after,
+.container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+    margin: 0 10px;
+    float: left;
+    display: block;
+    min-height: 1px;
+}
+
+.grid-1 {
+    width: calc(8.333% - 20px);
+}
+
+.grid-2 {
+    width: calc(16.666% - 20px);
+}
+
+.grid-3 {
+    width: calc(25% - 20px);
+}
+
+.grid-4 {
+    width: calc(33.333% - 20px);
+}
+
+.grid-5 {
+    width: calc(41.666% - 20px);
+}
+
+.grid-6 {
+    width: calc(50% - 20px);
+}
+
+.grid-7 {
+    width: calc(58.333% - 20px);
+}
+
+.grid-8 {
+    width: calc(66.666% - 20px);
+}
+
+.grid-9 {
+    width: calc(75% - 20px);
+}
+
+.grid-10 {
+    width: calc(83.333% - 20px);
+}
+
+.grid-11 {
+    width: calc(91.666% - 20px);
+}
+
+.grid-12 {
+    width: calc(100% - 20px);
+}
+
+@media (max-width: 739px) {
+    .container {
+        max-width: 300px;
+    }
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5,
+    .grid-6,
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12 {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    .container .grid-6 img {
+        margin-top: 30px;
+    }
+}
+
+
+/*INÍCIO RESET*/
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+em,
+img,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+footer,
+header,
+nav,
+section,
+main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    border-bottom: 1px solid #c7c7c7;
+}
+
+
+/*FIM RESET*/
+
+.banner {
+    background: url('assets/img/background.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #252525;
+    text-align: center;
+    padding: 250px 0;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    margin-bottom: 40px;
+}
+
+.btn {
+    background: #27638D;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .4s;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background: #26700D;
+}
+
+.grid-6 img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.grid-6 p {
+    margin: 40px 0 30px 0;
+    padding: 0 30px;
+}
+
+.grid-6 .btn {
+    display: table;
+    margin: 0 auto;
+}
+
+footer {
+    background: #26700D;
+    color: #fff;
+}
+
+footer .container {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.dicas {
+    background: url('/asset/img/background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 35vh;
+    color: #252525;
+    text-align: center;
+}
+
+.dicas h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.dicas ul {
+    margin: 0 auto 30px auto;
+    font-size: 0.8em;
+}
+
+.pergunta h4 {
+    background: green;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.pergunta li:nth-child(even) {
+    background: #e6e6e6;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.finalizar .btn {
+    display: table;
+    margin: 20px auto;
+}
