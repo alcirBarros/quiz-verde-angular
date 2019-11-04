@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackEndService } from '../core/back-end.service';
 
 @Component({
   selector: 'app-quiz',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizComponent implements OnInit {
 
-  constructor() { }
+  public perguntaQuaizArray:Array<Object>;
+
+  constructor(public backEndService: BackEndService) { 
+    
+  }
 
   ngOnInit() {
+    this.perguntaQuaizArray = this.backEndService.perguntaQuaizArray();
   }
 
 }

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { RadioButtonComponent } from './radio-button/radio-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    QuizComponent
+    QuizComponent,
+    RadioButtonComponent
   ],
   imports: [
     BrowserModule,
