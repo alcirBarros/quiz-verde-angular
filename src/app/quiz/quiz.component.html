@@ -7,7 +7,6 @@
                 <li>Cada questão tem apenas uma resposta correta;</li>
                 <li>As perguntas são feitas de forma aleatória;</li>
             </ul>
-
             <a href="/" class="btn">Voltar ao Início</a>
         </div>
     </div>
@@ -155,7 +154,8 @@
     </div>
 </section>
 
-<app-radio-button></app-radio-button>
+<h:radio-button [uiElementArray]="perguntaQuaizUiElementArray">
+</h:radio-button>
 
 <section class="finalizar">
     <a href="#" class="btn">Finalizar</a>

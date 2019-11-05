@@ -2,9 +2,9 @@
     <div class="container">
         <div class="grid-12">
             <h4>TEXTO</h4>
-            <ul *ngFor="let item of list">
-                <li>
-                    <input type="radio" formControlName="object" [value]="item.object"> {{item.display}}
+            <ul>
+                <li *ngFor="let item of list">
+                    <input type="radio" name="opcao1" formControlName="object" [value]="item.object"> {{item.display}}
                 </li>
             </ul>
         </div>

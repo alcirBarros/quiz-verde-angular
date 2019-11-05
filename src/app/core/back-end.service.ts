@@ -8,15 +8,38 @@ export class BackEndService {
 
   constructor() { }
 
-  public perguntaQuaizArray() :Array<Object>{
-    var array:Array<PerguntaQuiz>;
+  public perguntaQuaizArray(): Array<PerguntaQuiz> {
+    let array: Array<PerguntaQuiz> = new Array;
 
-    let perguntaQuiz = new PerguntaQuiz();
+    {
+      let perguntaQuiz = new PerguntaQuiz();
+      perguntaQuiz.id = 1;
+      perguntaQuiz.description = "TEXTO";
+      perguntaQuiz.name = "Texto";
+      array.push(perguntaQuiz);
+    }
 
-    perguntaQuiz.id= 1;
-    perguntaQuiz.description="TEXTO";
-    perguntaQuiz.name = "Texto";
-
+    {
+      let perguntaQuiz = new PerguntaQuiz();
+      perguntaQuiz.id = 1;
+      perguntaQuiz.description = "TEXTO";
+      perguntaQuiz.name = "Texto";
+      array.push(perguntaQuiz);
+    }
+    {
+      let perguntaQuiz = new PerguntaQuiz();
+      perguntaQuiz.id = 1;
+      perguntaQuiz.description = "TEXTO";
+      perguntaQuiz.name = "Texto";
+      array.push(perguntaQuiz);
+    }
+    {
+      let perguntaQuiz = new PerguntaQuiz();
+      perguntaQuiz.id = 1;
+      perguntaQuiz.description = "TEXTO";
+      perguntaQuiz.name = "Texto";
+      array.push(perguntaQuiz);
+    }
 
     return array;
   }
